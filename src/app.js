@@ -1,5 +1,8 @@
 const express = require('express')
 const router = require('./routes/index.routes')
+const dbConnection = require('./Database/sql')
+
+dbConnection()
 
 const app = express();
 app.use(express.json());
